@@ -3,6 +3,8 @@ ZeyOS REST API Browser
 
 A CLI tool to interact with the ZeyOS API. This tool allows you to link a ZeyOS application, generate default routes, and call API routes with ease.
 
+[![Watch the video](https://github.com/zeyos/zeyapi/blob/master/video-thumb.png)](https://vimeo.com/960433574/b346b5a9f9)
+
 ## Introduction
 
 ### What is OAuth 2.0?
