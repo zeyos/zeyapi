@@ -66,7 +66,7 @@ The tool requires linking a ZeyOS application to obtain the necessary OAuth 2.0 
 ### Link a New Application
 
 ```bash
-zeysdk link
+zeyapi link
 ```
 
 Follow the prompts to enter the instance ID, client ID, and client secret. The tool will guide you through the OAuth2 authorization process and save the tokens in `zeyos-api/config.json`. You will also be prompted to populate the routes directory with default routes.
@@ -74,13 +74,13 @@ Follow the prompts to enter the instance ID, client ID, and client secret. The t
 ### Call an API Route
 
 ```bash
-zeysdk run <route-name> --param "<placeholder>=<value>,..." [--verbose|-v]
+zeyapi run <route-name> --param "<placeholder>=<value>,..." [--verbose|-v]
 ```
 
 #### Example
 
 ```bash
-zeysdk run accounts-list -p "ID=4844"
+zeyapi run accounts-list -p "ID=4844"
 ```
 
 This will replace the `{limit}` placeholder with `5` and call the `/api/v1/accounts` route as defined in `routes/accounts-list.json`, displaying the request details and HTTP status code if `--verbose` is specified.
@@ -88,7 +88,7 @@ This will replace the `{limit}` placeholder with `5` and call the `/api/v1/accou
 ### Generate Default Routes
 
 ```bash
-zeysdk generate
+zeyapi generate
 ```
 
 This will fetch the Swagger JSON and generate default route files in the `routes` directory.
@@ -96,7 +96,7 @@ This will fetch the Swagger JSON and generate default route files in the `routes
 ### List All Routes
 
 ```bash
-zeysdk routes
+zeyapi routes
 ```
 
 This will list all available route files in the `routes` directory in a table format.
